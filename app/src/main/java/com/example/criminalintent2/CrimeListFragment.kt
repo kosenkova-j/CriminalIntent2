@@ -81,5 +81,5 @@ class CrimeListFragment : Fragment() {
             holder.bind(crime)
         }
     }
-//322 10 глава!!!!!!!
+
 }
