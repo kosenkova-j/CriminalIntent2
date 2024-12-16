@@ -39,6 +39,8 @@ android {
 dependencies {
 
     implementation(libs.androidx.roomruntime)
+    implementation(libs.androidx.room.common)
+    implementation(libs.androidx.room.ktx)
     kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.androidx.core.ktx)
