@@ -25,13 +25,13 @@ class CrimeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_crime, container, false)
-        titleField = view.findViewById<EditText>(R.id.crime_title)!!
-        dateButton = view.findViewById<Button>(R.id.crime_date)!!
-        dateButton.apply {
+        this.titleField = view.findViewById(R.id.crime_title)!!
+        this.dateButton = view.findViewById(R.id.crime_date)!!
+        val apply = dateButton.apply {
             text = crime.date.toString()
             isEnabled = false
         }
-        solvedCheckBox = view.findViewById<CheckBox>(R.id.crime_solved)!!
+        solvedCheckBox = view.findViewById(R.id.crime_solved)!!
 
         return view
     }
